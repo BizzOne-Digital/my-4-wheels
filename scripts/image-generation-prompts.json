@@ -1,0 +1,96 @@
+{
+  "tool": "built-in image_gen",
+  "note": "Generated illustrative artwork, not photos of real inventory or premises.",
+  "assets": [
+    {
+      "name": "hero",
+      "stockId": "1580273916550-e323be2ae537",
+      "prompt": "Use case: photorealistic-natural. Asset: wide cinematic automotive website hero photograph, 1792x1024 landscape. Premium silver performance sedan at front three-quarter angle parked on the RIGHT HALF of frame, full car and wheels visible. Moody modern Montreal industrial architecture at night, glossy rain-dark asphalt, restrained red architectural accent lights, realistic reflections, beautiful silver paint and headlights. LEFT HALF mostly empty dark architectural shadow for website headline overlay. Premium black white red dealership visual identity. Photoreal professional automotive commercial photography, no people, no text, no watermarks, no added interface.",
+      "url": "/images/hero.webp"
+    },
+    {
+      "name": "showroom",
+      "stockId": "1492144534655-ae79c964c9d7",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. A beautiful contemporary used-car dealership showroom with floor to ceiling glass, black architectural frames, subtle red trim, several immaculate sedans and SUVs, Montreal city ambiance at sunset, inviting warm indoor lighting. Wide landscape architectural automotive commercial photograph, realistic, no people, no logos or lettering.",
+      "url": "/images/showroom.webp"
+    },
+    {
+      "name": "booking-interior",
+      "stockId": "1449965408869-eaa3f722e40d",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. Premium black leather car interior viewed from passenger seat, steering wheel on left of image, elegant dashboard and center console, Montreal skyline and sunset bokeh beyond windshield, cinematic black and subtle red lighting, wide landscape commercial photography, dark negative space for website CTA text, no people, no logos, no text.",
+      "url": "/images/booking-interior.webp"
+    },
+    {
+      "name": "vehicle-inspection",
+      "stockId": "1486262715619-67b85e0b08d3",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. Professional automotive mechanic wearing clean dark workwear and gloves inspecting an immaculate sedan engine bay in a modern well lit workshop, realistic tools and engine components, inspection confidence, restrained black white red dealership aesthetic, wide landscape editorial photograph, no text no watermark.",
+      "url": "/images/vehicle-inspection.webp"
+    },
+    {
+      "name": "red-lit-garage",
+      "stockId": "1590362891991-f776e747a588",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. Silver sports sedan parked inside luxurious minimalist black concrete dealership garage, dramatic red linear architectural lighting, front three quarter view, full vehicle in scene, polished concrete floor, cinematic photoreal wide landscape automotive photograph, no people no text no watermark.",
+      "url": "/images/red-lit-garage.webp"
+    },
+    {
+      "name": "open-road",
+      "stockId": "1568605117036-5fe5e7bab0b7",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. Beautiful silver sedan on a scenic Quebec road winding through green hills in late summer, view from behind three quarter angle, aspirational freedom of driving, warm golden sunlight, premium natural automotive lifestyle photography, wide landscape composition, no text no watermark.",
+      "url": "/images/open-road.webp"
+    },
+    {
+      "name": "winter-suv",
+      "stockId": "1517524008697-84bbe3c3fd98",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. Immaculate modern silver compact SUV parked safely on plowed snowy road near Montreal with snow covered pine trees, subtle winter city skyline in distance, realistic winter tires and soft overcast light, premium wide landscape automotive editorial photograph, no people no text no watermark.",
+      "url": "/images/winter-suv.webp"
+    },
+    {
+      "name": "honda-civic",
+      "stockId": "1621007947382-bb3c3994e3fb",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. A grey 2021 Honda Civic sedan, accurate tenth generation body styling, full car front three-quarter view with all wheels visible, parked beside Montreal waterfront with skyline background, natural daylight, realistic commercial used-car inventory photography, landscape 3:2 framing with generous margins, no price labels no text no watermark.",
+      "url": "/images/honda-civic.webp"
+    },
+    {
+      "name": "toyota-rav4",
+      "stockId": "1617469767053-d3b523a0b982",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. A silver 2020 Toyota RAV4 compact SUV, accurate fifth generation angular styling, full car front three-quarter view all wheels visible, Montreal waterfront parking with autumn trees, natural daylight, premium realistic used-car inventory photography, landscape 3:2 framing with generous margins, no price labels no text no watermark.",
+      "url": "/images/toyota-rav4.webp"
+    },
+    {
+      "name": "mazda-cx5",
+      "stockId": "1550355291-bbee04a92027",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. A glossy soul-red 2022 Mazda CX-5 SUV, accurate model body styling, full car front three quarter view all wheels visible, Montreal waterfront skyline background, natural daylight, premium realistic commercial used-car inventory photograph, landscape 3:2 with generous margins, no price labels no text no watermark.",
+      "url": "/images/mazda-cx5.webp"
+    },
+    {
+      "name": "volkswagen-golf",
+      "stockId": "1541899481282-d53bffe3c35d",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. A metallic blue 2019 Volkswagen Golf five door hatchback accurate seventh generation body styling, full car front three quarter view all wheels visible, clean Montreal waterfront parking background, natural daylight, realistic premium used-car inventory photography, landscape 3:2 with generous margins, no price labels no text no watermark.",
+      "url": "/images/volkswagen-golf.webp"
+    },
+    {
+      "name": "tesla-model3",
+      "stockId": "1560958089-b8a1929cea89",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. A pearl white 2020 Tesla Model 3 sedan with original pre-refresh body styling, full car front three quarter view all wheels visible, clean Montreal waterfront parking background, natural daylight, realistic premium used-car inventory photograph, landscape 3:2 with generous margins, no labels no text no watermark.",
+      "url": "/images/tesla-model3.webp"
+    },
+    {
+      "name": "hyundai-elantra",
+      "stockId": "1619767886558-efdc259cde1a",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. A glossy black 2021 Hyundai Elantra sedan accurate seventh generation angular body styling, full car front three quarter view all wheels visible, clean Montreal waterfront parking background, natural daylight, realistic premium used-car inventory photography, landscape 3:2 with generous margins, no price labels no text no watermark.",
+      "url": "/images/hyundai-elantra.webp"
+    },
+    {
+      "name": "white-suv",
+      "stockId": "1600661653561-629509216228",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. A clean pearl white modern midsize SUV full car front three quarter view with all wheels visible, Montreal waterfront parking background, daylight, premium photoreal used-car inventory photography landscape 3:2 framing with generous margins, no text no watermark.",
+      "url": "/images/white-suv.webp"
+    },
+    {
+      "name": "buying-checklist",
+      "stockId": "1503376780353-7e6692767b70",
+      "prompt": "Use case: photorealistic-natural. Asset: premium automotive website photograph. Close editorial scene of a used-car purchase consultation in a contemporary black white red dealership, hands of customer and advisor with simple blank checklist on clipboard and car key on clean desk, silver car softly out of focus beyond glass, warm natural daylight, premium wide landscape photoreal editorial photograph for a car buying blog, no readable text no logos no watermark.",
+      "url": "/images/buying-checklist.webp"
+    }
+  ]
+}
