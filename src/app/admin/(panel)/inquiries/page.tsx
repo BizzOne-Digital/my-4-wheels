@@ -12,7 +12,7 @@ export default function InquiriesAdmin() {
       statusControl={{ key: "status", options: ["new", "in-progress", "closed"] }}
       filters={[
         { key: "status", label: "Status", options: ["new", "in-progress", "closed"].map((v) => ({ value: v, label: v })) },
-        { key: "subject", label: "Subject", options: ["general", "vehicle", "financing", "trade-in", "sell", "offer", "other"].map((v) => ({ value: v, label: v })) },
+        { key: "subject", label: "Subject", options: ["general", "vehicle", "financing", "trade-in", "sell", "offer", "careers", "other"].map((v) => ({ value: v, label: v })) },
       ]}
       columns={[
         { key: "createdAt", label: "Received", render: (i) => date(i.createdAt) },

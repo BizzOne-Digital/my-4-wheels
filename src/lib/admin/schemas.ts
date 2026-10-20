@@ -117,6 +117,17 @@ export const offerSchema = z.object({
   order: z.coerce.number().int().default(0),
 });
 
+export const jobSchema = z.object({
+  slug,
+  title: reqLoc(),
+  location: z.string().trim().max(120).default("Montréal, QC"),
+  type: z.enum(["full-time", "part-time", "contract", "seasonal"]),
+  summary: loc(400),
+  description: loc(8000),
+  status: z.enum(["open", "closed"]),
+  order: z.coerce.number().int().default(0),
+});
+
 export const bookingPatchSchema = z.object({
   status: z.enum(["pending", "confirmed", "completed", "cancelled"]).optional(),
   adminNotes: z.string().max(2000).optional(),

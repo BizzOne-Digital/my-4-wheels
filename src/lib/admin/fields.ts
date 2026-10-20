@@ -145,3 +145,15 @@ export const OFFER_FIELDS: FieldDef[] = [
   { name: "showOnHomepage", label: "Show in homepage red strip", type: "checkbox", half: true },
 ];
 export const OFFER_DEFAULTS = { title: { en: "", fr: "" }, slug: "", order: 0, subtitle: { en: "", fr: "" }, body: { en: "", fr: "" }, eligibility: { en: "", fr: "" }, image: "", startsAt: "", expiresAt: "", visible: true, showOnHomepage: false };
+
+export const JOB_FIELDS: FieldDef[] = [
+  { name: "title", label: "Job title", type: "loc", required: true },
+  { name: "slug", label: "Slug", type: "text", required: true, half: true, help: "e.g. sales-advisor" },
+  { name: "location", label: "Location", type: "text", half: true },
+  { name: "type", label: "Employment type", type: "select", options: opts(["full-time", "part-time", "contract", "seasonal"]), half: true },
+  { name: "status", label: "Status", type: "select", options: opts(["open", "closed"]), half: true },
+  { name: "summary", label: "Short summary", type: "loc", multiline: true, rows: 2 },
+  { name: "description", label: "Full description", type: "loc", multiline: true, rows: 10, help: "Responsibilities, requirements, schedule, pay range. Blank line = new paragraph, '## ' = heading, '- ' = bullet." },
+  { name: "order", label: "Order", type: "number", half: true },
+];
+export const JOB_DEFAULTS = { title: { en: "", fr: "" }, slug: "", location: "Montréal, QC", type: "full-time", status: "open", summary: { en: "", fr: "" }, description: { en: "", fr: "" }, order: 0 };

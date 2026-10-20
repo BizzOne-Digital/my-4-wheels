@@ -14,3 +14,4 @@ export * from "./Offer";
 export * from "./SiteSettings";
 export * from "./Payment";
 export * from "./StoredUpload";
+export * from "./JobPosting";

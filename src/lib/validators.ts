@@ -28,7 +28,7 @@ export const inquirySchema = z.object({
   name: nameField,
   email: emailField,
   phone: optionalPhone.optional().default(""),
-  subject: z.enum(["general", "vehicle", "financing", "trade-in", "sell", "offer", "other"]).default("general"),
+  subject: z.enum(["general", "vehicle", "financing", "trade-in", "sell", "offer", "careers", "other"]).default("general"),
   message: z.string().trim().min(5, "tooShort").max(4000, "tooLong"),
   vehicleId: optionalId,
   details: z
@@ -38,6 +38,7 @@ export const inquirySchema = z.object({
       model: z.string().trim().max(60, "tooLong").optional(),
       mileage: z.string().trim().max(12, "tooLong").optional(),
       offer: z.string().trim().max(120, "tooLong").optional(),
+      position: z.string().trim().max(120, "tooLong").optional(),
     })
     .optional()
     .default({}),

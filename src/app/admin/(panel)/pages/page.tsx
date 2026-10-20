@@ -8,7 +8,7 @@ export default function PagesAdmin() {
     <ResourceManager
       resource="pages"
       title="Page content"
-      description="Editable homepage sections and page copy. Keys used by the site: home.hero, home.about, home.cta, about.main. Empty fields fall back to the default translations."
+      description="Editable homepage sections and page copy. Keys used by the site: home.hero, home.about, home.cta, about.main, about.owner (owner name = Title, role = Subtitle, bio = Body, photo = Image; hidden until “Visible” is ticked). Empty fields fall back to the default translations."
       fields={PAGE_FIELDS}
       defaults={PAGE_DEFAULTS}
       columns={[

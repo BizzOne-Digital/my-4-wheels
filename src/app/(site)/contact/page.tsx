@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Clock, MapPin, Phone, Mail } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { InquiryForm } from "@/components/forms/InquiryForm";
+import { SocialLinks, hasSocial } from "@/components/site/SocialLinks";
 import { getDict } from "@/lib/i18n/server";
 import { getSettings } from "@/lib/settings";
 import { l } from "@/lib/format";
@@ -42,8 +43,17 @@ export default async function ContactPage() {
           {s.email && s.emailVerified && (
             <a href={`mailto:${s.email}`} className="card flex items-center gap-4 p-5 hover:border-brand">
               <Mail className="h-6 w-6 text-brand" aria-hidden />
-              <span className="font-semibold">{s.email}</span>
+              <span>
+                <span className="block text-xs text-neutral-500">{t.form.email}</span>
+                <span className="break-all font-semibold">{s.email}</span>
+              </span>
             </a>
+          )}
+          {hasSocial(s.social as Record<string, string>) && (
+            <div className="card p-5">
+              <p className="mb-3 text-xs text-neutral-500">{t.footer.followUs}</p>
+              <SocialLinks social={s.social as Record<string, string>} iconClass="h-6 w-6" className="gap-5 text-ink" />
+            </div>
           )}
         </div>
         <div className="card p-6 sm:p-8">

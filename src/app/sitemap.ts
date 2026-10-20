@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = process.env.NEXT_PUBLIC_SITE_URL || "https://my4wheels.com";
-  const statics = ["", "/inventory", "/about", "/services", "/contact", "/testimonials", "/faq", "/pricing", "/blog", "/booking", "/team", "/offers", "/financing", "/trade-in", "/sell-your-car", "/privacy", "/terms"];
+  const statics = ["", "/inventory", "/about", "/services", "/contact", "/testimonials", "/faq", "/pricing", "/blog", "/booking", "/team", "/offers", "/careers", "/financing", "/trade-in", "/sell-your-car", "/privacy", "/terms"];
   const out: MetadataRoute.Sitemap = statics.map((p) => ({ url: `${base}${p}`, changeFrequency: "weekly", priority: p === "" ? 1 : 0.6 }));
   try {
     await connectDB();

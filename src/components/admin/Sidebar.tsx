@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { BookOpen, CalendarDays, Car, CreditCard, FileText, Image as ImageIcon, LayoutDashboard, Menu, MessageSquare, MessagesSquare, Settings, Tag, Users, UserSquare2, Wrench, X } from "lucide-react";
+import { Briefcase, BookOpen, CalendarDays, Car, CreditCard, FileText, Image as ImageIcon, LayoutDashboard, Menu, MessageSquare, MessagesSquare, Settings, Tag, Users, UserSquare2, Wrench, X } from "lucide-react";
 import { Logo } from "../Logo";
 import { LogoutButton } from "../forms/AuthForms";
 
@@ -17,6 +17,7 @@ const NAV = [
   { href: "/admin/testimonials", label: "Testimonials", icon: MessagesSquare },
   { href: "/admin/team", label: "Team", icon: UserSquare2 },
   { href: "/admin/offers", label: "Offers", icon: Tag },
+  { href: "/admin/careers", label: "Careers", icon: Briefcase },
   { href: "/admin/media", label: "Media", icon: ImageIcon },
   { href: "/admin/customers", label: "Customers", icon: Users },
   { href: "/admin/payments", label: "Payments", icon: CreditCard },

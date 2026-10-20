@@ -9,7 +9,7 @@ import { useI18n } from "@/lib/i18n/client";
 import { api } from "@/lib/api-client";
 import { Field } from "./Field";
 
-type Variant = "contact" | "vehicle" | "financing" | "trade-in" | "sell" | "offer";
+type Variant = "contact" | "vehicle" | "financing" | "trade-in" | "sell" | "offer" | "careers";
 
 export function InquiryForm({ variant = "contact", vehicleId, offerTitle }: { variant?: Variant; vehicleId?: string; offerTitle?: string }) {
   const { t, locale } = useI18n();
@@ -22,7 +22,7 @@ export function InquiryForm({ variant = "contact", vehicleId, offerTitle }: { va
     formState: { errors, isSubmitting },
   } = useForm<InquiryInput>({
     resolver: zodResolver(inquirySchema),
-    defaultValues: { subject: subject as InquiryInput["subject"], vehicleId: vehicleId ?? "", locale, details: { offer: offerTitle ?? "" }, website: "" },
+    defaultValues: { subject: subject as InquiryInput["subject"], vehicleId: vehicleId ?? "", locale, details: variant === "careers" ? { position: offerTitle ?? "" } : { offer: offerTitle ?? "" }, website: "" },
   });
 
   const onSubmit = handleSubmit(async (data) => {

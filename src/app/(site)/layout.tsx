@@ -41,7 +41,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
       <a href="#main" className="sr-only z-50 bg-white p-3 focus:not-sr-only focus:fixed focus:left-2 focus:top-2">
         {t.nav.skip}
       </a>
-      <ContactStrip address={address} hours={hours} mapUrl={mapUrl} />
+      <ContactStrip address={address} hours={hours} mapUrl={mapUrl} social={s.social as Record<string, string>} />
       <Header logo={s.logo} phone={s.phone} phoneHref={phoneHref} />
       <main id="main">{children}</main>
       <Footer

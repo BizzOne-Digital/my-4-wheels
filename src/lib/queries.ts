@@ -180,3 +180,10 @@ export async function bodyTypeCounts() {
   ]);
   return Object.fromEntries(rows.map((r) => [r._id, r.n])) as Record<string, number>;
 }
+
+/** Open job postings for the Careers page. */
+export async function openJobs() {
+  await connectDB();
+  const { JobPosting } = await import("@/models/JobPosting");
+  return plain(await JobPosting.find({ status: "open" }).sort({ order: 1, createdAt: -1 }).lean());
+}

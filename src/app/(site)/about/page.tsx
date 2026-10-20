@@ -16,7 +16,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function AboutPage() {
   const { t, locale } = await getDict();
-  const page = await pageContent("about.main");
+  const [page, owner] = await Promise.all([pageContent("about.main"), pageContent("about.owner")]);
+  const showOwner = Boolean(owner?.visible && l(owner.title, locale));
   const icons = [BadgeCheck, Receipt, Users];
   return (
     <>
@@ -36,6 +37,25 @@ export default async function AboutPage() {
           </div>
         </div>
       </section>
+      {showOwner && owner && (
+        <section className="bg-ink py-16 text-white" aria-labelledby="owner-title">
+          <div className={`container-site grid items-center gap-10 ${owner.image ? "md:grid-cols-[minmax(0,360px)_1fr]" : "max-w-3xl"}`}>
+            {owner.image && (
+              <div className="relative mx-auto aspect-[4/5] w-full max-w-[360px] overflow-hidden rounded-[4px] bg-white/5">
+                <SafeImage src={owner.image} alt={l(owner.imageAlt, locale) || l(owner.title, locale)} fill sizes="360px" className="object-cover" />
+              </div>
+            )}
+            <div>
+              <p className="eyebrow">{l(owner.eyebrow, locale) || t.pages.ownerEyebrow}</p>
+              <h2 id="owner-title" className="h-section mt-2">{l(owner.title, locale)}</h2>
+              {l(owner.subtitle, locale) && <p className="mt-1 font-semibold text-brand">{l(owner.subtitle, locale)}</p>}
+              <div className="mt-5 [&_p]:text-white/80">
+                <RichText text={l(owner.body, locale)} />
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
       <section className="bg-mist py-14">
         <ul className="container-site grid gap-6 md:grid-cols-3">
           {t.pages.values.map((v, i) => {

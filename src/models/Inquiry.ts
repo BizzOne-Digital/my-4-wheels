@@ -1,6 +1,6 @@
 import { Schema, model, models, type InferSchemaType, type Model } from "mongoose";
 
-export const INQUIRY_SUBJECTS = ["general", "vehicle", "financing", "trade-in", "sell", "offer", "other"] as const;
+export const INQUIRY_SUBJECTS = ["general", "vehicle", "financing", "trade-in", "sell", "offer", "careers", "other"] as const;
 
 const InquirySchema = new Schema(
   {

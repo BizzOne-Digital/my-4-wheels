@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Clock, Globe, MapPin, Mail, Phone } from "lucide-react";
 import { Logo } from "../Logo";
+import { SocialLinks } from "./SocialLinks";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 
 type Props = {
@@ -24,6 +25,7 @@ export function Footer({ t, logo, website, address, mapUrl, hours, phone, phoneH
     { href: "/team", label: t.footer.team },
     { href: "/testimonials", label: t.footer.testimonials },
     { href: "/offers", label: t.footer.offers },
+    { href: "/careers", label: t.footer.careers },
   ];
   const explore = [
     { href: "/inventory", label: t.nav.inventory },
@@ -44,15 +46,10 @@ export function Footer({ t, logo, website, address, mapUrl, hours, phone, phoneH
             <Logo variant="dark" uploaded={logo} className="h-14 w-[200px]" />
           </Link>
           {socials.length > 0 && (
-            <ul className="mt-6 flex flex-wrap gap-4 text-xs text-white/70">
-              {socials.map(([k, v]) => (
-                <li key={k}>
-                  <a href={v} target="_blank" rel="noopener noreferrer" className="capitalize hover:text-white">
-                    {k}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <div className="mt-6">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/60">{t.footer.followUs}</p>
+              <SocialLinks social={social} iconClass="h-5 w-5" className="gap-4 text-white/80" />
+            </div>
           )}
         </div>
         <address className="space-y-3 text-sm not-italic text-white/80 md:border-r md:border-white/15 md:pr-8">

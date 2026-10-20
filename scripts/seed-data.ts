@@ -36,6 +36,7 @@ export const PAGES = [
   { key: "home.hero", label: "Homepage hero", image: u("1580273916550-e323be2ae537", 2000), imageAlt: L("Silver sports coupe under dramatic studio lighting", "Coupé sport argenté sous un éclairage de studio") },
   { key: "home.about", label: "Homepage about preview", image: u("1492144534655-ae79c964c9d7"), imageAlt: L("Row of cars inside a dealership garage", "Rangée de voitures dans le garage d’un concessionnaire") },
   { key: "home.cta", label: "Homepage booking CTA", image: u("1449965408869-eaa3f722e40d", 2000), imageAlt: L("Driver's hands on a steering wheel at dusk", "Mains d’un conducteur sur le volant au crépuscule") },
+  { key: "about.owner", label: "About page: owner profile (fill in, then tick Visible)", visible: false, eyebrow: L("Meet the owner", "Rencontrez le propriétaire") },
   { key: "about.main", label: "About page", body: L(ABOUT_EN, ABOUT_FR), image: u("1492144534655-ae79c964c9d7"), imageAlt: L("Cars inside a dealership garage", "Voitures dans le garage d’un concessionnaire") },
 ];
 

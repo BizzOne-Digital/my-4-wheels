@@ -11,11 +11,13 @@ import { Booking } from "@/models/Booking";
 import { Inquiry } from "@/models/Inquiry";
 import { User } from "@/models/User";
 import { Payment } from "@/models/Payment";
+import { JobPosting } from "@/models/JobPosting";
 import {
   blogSchema,
   bookingPatchSchema,
   customerPatchSchema,
   inquiryPatchSchema,
+  jobSchema,
   offerSchema,
   pageSchema,
   serviceSchema,
@@ -61,6 +63,7 @@ export const RESOURCES: Record<string, ResourceDef> = {
   testimonials: { model: Testimonial, create: testimonialSchema, update: testimonialSchema, deletable: true, search: ["name", "quote"], filters: ["status"], sort: { createdAt: -1 } },
   team: { model: TeamMember, create: teamSchema, update: teamSchema, deletable: true, images: one("photo"), search: ["name"], sort: { order: 1 } },
   offers: { model: Offer, create: offerSchema, update: offerSchema, deletable: true, images: one("image"), search: ["title.en", "slug"], filters: ["visible"], sort: { order: 1 } },
+  careers: { model: JobPosting, create: jobSchema, update: jobSchema, deletable: true, search: ["title.en", "slug", "location"], filters: ["status"], sort: { order: 1 } },
   bookings: {
     model: Booking,
     update: bookingPatchSchema,
